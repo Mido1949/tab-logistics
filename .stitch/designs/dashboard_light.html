@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sender Dashboard - Premium Tech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#dc2626",
+                        "background-light": "#ffffff",
+                        "background-dark": "#1a1a1a",
+                        "slate-custom": "#64748b",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="flex items-center bg-white dark:bg-background-dark p-4 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50">
+<div class="flex size-10 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-custom">
+<span class="material-symbols-outlined">menu</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight flex-1 text-center">Sender Dashboard</h2>
+<div class="flex size-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 p-4 md:p-6 max-w-5xl mx-auto w-full">
+<!-- Quick Stats -->
+<div class="flex flex-wrap gap-4 mb-8">
+<div class="flex min-w-[240px] flex-1 flex-col gap-3 rounded-xl p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<p class="text-slate-custom dark:text-slate-400 text-sm font-semibold uppercase tracking-wider">Total Shipments</p>
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+</div>
+<p class="text-slate-900 dark:text-white text-3xl font-bold">1,284</p>
+<div class="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 text-sm font-medium">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>+12.5% vs last month</span>
+</div>
+</div>
+<div class="flex min-w-[240px] flex-1 flex-col gap-3 rounded-xl p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<p class="text-slate-custom dark:text-slate-400 text-sm font-semibold uppercase tracking-wider">Active Deliveries</p>
+<span class="material-symbols-outlined text-primary">package_2</span>
+</div>
+<p class="text-slate-900 dark:text-white text-3xl font-bold">42</p>
+<div class="flex items-center gap-1 text-primary text-sm font-medium">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>In progress</span>
+</div>
+</div>
+<div class="flex min-w-[240px] flex-1 flex-col gap-3 rounded-xl p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<p class="text-slate-custom dark:text-slate-400 text-sm font-semibold uppercase tracking-wider">Pending Quotes</p>
+<span class="material-symbols-outlined text-primary">request_quote</span>
+</div>
+<p class="text-slate-900 dark:text-white text-3xl font-bold">12</p>
+<div class="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 text-sm font-medium">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+<span>5 ready to book</span>
+</div>
+</div>
+</div>
+<!-- Action Area -->
+<div class="flex flex-col md:flex-row gap-4 mb-8">
+<button class="flex-1 bg-primary text-white py-4 px-6 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">add_circle</span>
+                    Create New Shipment
+                </button>
+<button class="flex-1 bg-white dark:bg-slate-900 text-slate-900 dark:text-white py-4 px-6 rounded-xl font-bold border border-slate-200 dark:border-slate-800 flex items-center justify-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">analytics</span>
+                    View Analytics Report
+                </button>
+</div>
+<!-- List Section -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
+<div class="p-5 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
+<h2 class="text-slate-900 dark:text-white text-lg font-bold">Recent Shipments</h2>
+<a class="text-primary text-sm font-bold hover:underline" href="#">View All</a>
+</div>
+<div class="divide-y divide-slate-100 dark:divide-slate-800">
+<!-- Item 1 -->
+<div class="flex items-center gap-4 p-5 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors cursor-pointer">
+<div class="flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-primary shrink-0 size-12">
+<span class="material-symbols-outlined">inventory_2</span>
+</div>
+<div class="flex flex-col flex-1">
+<p class="text-slate-900 dark:text-white text-base font-bold">Shipment #39021</p>
+<p class="text-slate-custom dark:text-slate-400 text-sm font-medium">San Francisco → London</p>
+</div>
+<div class="flex flex-col items-end">
+<p class="text-slate-900 dark:text-white text-base font-bold">$450.00</p>
+<span class="px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-[10px] font-bold uppercase tracking-wider">In Transit</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center gap-4 p-5 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors cursor-pointer">
+<div class="flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-primary shrink-0 size-12">
+<span class="material-symbols-outlined">box</span>
+</div>
+<div class="flex flex-col flex-1">
+<p class="text-slate-900 dark:text-white text-base font-bold">Shipment #38944</p>
+<p class="text-slate-custom dark:text-slate-400 text-sm font-medium">New York → Berlin</p>
+</div>
+<div class="flex flex-col items-end">
+<p class="text-slate-900 dark:text-white text-base font-bold">$1,220.00</p>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold uppercase tracking-wider">Delivered</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center gap-4 p-5 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors cursor-pointer">
+<div class="flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-primary shrink-0 size-12">
+<span class="material-symbols-outlined">local_shipping</span>
+</div>
+<div class="flex flex-col flex-1">
+<p class="text-slate-900 dark:text-white text-base font-bold">Shipment #38912</p>
+<p class="text-slate-custom dark:text-slate-400 text-sm font-medium">Tokyo → Los Angeles</p>
+</div>
+<div class="flex flex-col items-end">
+<p class="text-slate-900 dark:text-white text-base font-bold">$890.00</p>
+<span class="px-2 py-0.5 rounded-full bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-[10px] font-bold uppercase tracking-wider">Processing</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="mt-8 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 relative h-64 bg-slate-100 dark:bg-slate-800">
+<img class="w-full h-full object-cover opacity-60 grayscale mix-blend-multiply dark:mix-blend-normal" data-alt="Modern world map showing logistics routes" data-location="Global" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-eHs9NfM260CG2Jlq11I_SNleOWoAvS7lnzJynaPsjTnQAswedPwIwjyhsK09dc61bBbEQUKwo7FnxicNW0A1xTtFzV3ypC6kE7WxrTk5aG89Kq-nk320r5PAC5YiGABAW_nxgphczdsHJN5I-RCgiRFSwpqSq3Rwc3rwNpfH_0NFoFf5cQ9e00keZ1zb8edZQO8mw_XRG6Va48t8UrJfCYoYjaNrMHjo7S2CChOvggo0R2mZhnGVrXOaONH_1nY8yfc0wbm9-TTZ"/>
+<div class="absolute inset-0 flex items-center justify-center bg-white/40 dark:bg-black/40 backdrop-blur-[2px]">
+<div class="bg-white dark:bg-slate-900 p-4 rounded-xl shadow-xl border border-slate-200 dark:border-slate-800 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="font-bold text-slate-900 dark:text-white">Track Global Fleet</span>
+<button class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold ml-2">Open Map</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 px-4 pb-6 pt-3 flex justify-around items-center z-50">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-[10px] font-bold uppercase tracking-[0.05em]">Home</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-custom dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">package_2</span>
+<p class="text-[10px] font-bold uppercase tracking-[0.05em]">Shipments</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-custom dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">description</span>
+<p class="text-[10px] font-bold uppercase tracking-[0.05em]">Quotes</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-custom dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">settings</span>
+<p class="text-[10px] font-bold uppercase tracking-[0.05em]">Settings</p>
+</a>
+</nav>
+<!-- Spacer for Bottom Nav -->
+<div class="h-24"></div>
+</div>
+</body></html>

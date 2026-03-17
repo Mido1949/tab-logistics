@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pricing | Tab Logistics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;900&amp;family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#dc2828",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#201212",
+                    },
+                    fontFamily: {
+                        "display": ["Cairo", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .font-cairo {
+            font-family: 'Cairo', sans-serif;
+        }
+        .glass-card {
+            background: rgba(49, 27, 27, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(220, 40, 40, 0.1);
+        }
+        .popular-glow {
+            box-shadow: 0 0 25px rgba(220, 40, 40, 0.2);
+            border: 1px solid rgba(220, 40, 40, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex flex-col w-full overflow-x-hidden">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/10 px-6 md:px-20 py-4 glass-card sticky top-0 z-50">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-6">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
+</svg>
+</div>
+<h2 class="text-slate-100 text-xl font-cairo font-black leading-tight tracking-tight">Tab Logistics</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Features</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Solutions</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Pricing</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">About</a>
+</div>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold transition-transform hover:scale-105 active:scale-95">
+<span class="truncate">Get Started</span>
+</button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-slate-100">menu</span>
+</div>
+</header>
+<main class="flex-1 max-w-7xl mx-auto px-6 py-16 md:py-24">
+<!-- Hero Section -->
+<div class="text-center mb-16">
+<h1 class="font-cairo font-black text-4xl md:text-6xl text-slate-100 mb-6 tracking-tight">
+                    Scalable Shipping, <span class="text-primary">Transparent Pricing</span>
+</h1>
+<p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto">
+                    From independent merchants to global logistics hubs. Choose the plan that powers your next phase of growth.
+                </p>
+</div>
+<!-- Pricing Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+<!-- Merchant Plan -->
+<div class="glass-card rounded-xl p-8 flex flex-col gap-6 relative transition-transform hover:-translate-y-1">
+<div>
+<h3 class="font-cairo font-black text-xl text-slate-300 uppercase tracking-widest mb-2">Merchant</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-5xl font-cairo font-black text-slate-100">Free</span>
+</div>
+<p class="text-slate-400 mt-4 text-sm">Perfect for individuals and small shops starting their journey.</p>
+</div>
+<button class="w-full py-3 rounded-lg border border-primary/30 text-slate-100 font-bold hover:bg-primary/10 transition-colors">
+                        Start for Free
+                    </button>
+<div class="flex flex-col gap-4 pt-4">
+<div class="flex items-center gap-3 text-slate-300 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Basic order tracking
+                        </div>
+<div class="flex items-center gap-3 text-slate-300 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Up to 50 orders / month
+                        </div>
+<div class="flex items-center gap-3 text-slate-300 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Standard email support
+                        </div>
+<div class="flex items-center gap-3 text-slate-500 text-sm">
+<span class="material-symbols-outlined text-slate-700 text-lg">cancel</span>
+                            Advanced Analytics
+                        </div>
+</div>
+</div>
+<!-- Logistics Plan (Most Popular) -->
+<div class="glass-card rounded-xl p-8 flex flex-col gap-6 relative popular-glow transform scale-105 border-primary/50 z-10 bg-primary/5">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase">
+                        Most Popular
+                    </div>
+<div>
+<h3 class="font-cairo font-black text-xl text-primary uppercase tracking-widest mb-2">Logistics</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-5xl font-cairo font-black text-slate-100">99</span>
+<span class="text-slate-400 font-bold">EGP/mo</span>
+</div>
+<p class="text-slate-300 mt-4 text-sm">Our most powerful tools for growing delivery fleets and businesses.</p>
+</div>
+<button class="w-full py-3 rounded-lg bg-primary text-white font-bold hover:brightness-110 shadow-lg shadow-primary/20 transition-all">
+                        Get Started Now
+                    </button>
+<div class="flex flex-col gap-4 pt-4">
+<div class="flex items-center gap-3 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Real-time fleet tracking
+                        </div>
+<div class="flex items-center gap-3 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Unlimited monthly orders
+                        </div>
+<div class="flex items-center gap-3 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Priority 24/7 support
+                        </div>
+<div class="flex items-center gap-3 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Advanced analytics dashboard
+                        </div>
+<div class="flex items-center gap-3 text-slate-200 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            API Access &amp; Webhooks
+                        </div>
+</div>
+</div>
+<!-- Enterprise Plan -->
+<div class="glass-card rounded-xl p-8 flex flex-col gap-6 relative transition-transform hover:-translate-y-1">
+<div>
+<h3 class="font-cairo font-black text-xl text-slate-300 uppercase tracking-widest mb-2">Enterprise</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-5xl font-cairo font-black text-slate-100">Custom</span>
+</div>
+<p class="text-slate-400 mt-4 text-sm">Tailored solutions for large-scale operations requiring maximum control.</p>
+</div>
+<button class="w-full py-3 rounded-lg border border-primary/30 text-slate-100 font-bold hover:bg-primary/10 transition-colors">
+                        Contact Sales
+                    </button>
+<div class="flex flex-col gap-4 pt-4">
+<div class="flex items-center gap-3 text-slate-300 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Custom white-label portal
+                        </div>
+<div class="flex items-center gap-3 text-slate-300 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            Dedicated Account Manager
+                        </div>
+<div class="flex items-center gap-3 text-slate-300 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            SLA Performance Guarantees
+                        </div>
+<div class="flex items-center gap-3 text-slate-300 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                            On-premise deployment options
+                        </div>
+</div>
+</div>
+</div>
+<!-- Detailed Comparison Table -->
+<div class="mt-32">
+<h2 class="font-cairo font-black text-3xl text-slate-100 mb-10 text-center">Compare All Features</h2>
+<div class="overflow-x-auto rounded-xl border border-primary/10 glass-card">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-primary/10">
+<th class="p-6 text-slate-100 font-cairo font-black uppercase text-sm tracking-wider">Feature</th>
+<th class="p-6 text-slate-100 font-cairo font-black uppercase text-sm tracking-wider">Merchant</th>
+<th class="p-6 text-primary font-cairo font-black uppercase text-sm tracking-wider">Logistics</th>
+<th class="p-6 text-slate-100 font-cairo font-black uppercase text-sm tracking-wider">Enterprise</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-primary/5">
+<tr>
+<td class="p-6 text-slate-300 font-medium">Order Management</td>
+<td class="p-6"><span class="material-symbols-outlined text-primary">check</span></td>
+<td class="p-6"><span class="material-symbols-outlined text-primary">check</span></td>
+<td class="p-6"><span class="material-symbols-outlined text-primary">check</span></td>
+</tr>
+<tr>
+<td class="p-6 text-slate-300 font-medium">Fleet Tracking</td>
+<td class="p-6 text-slate-500">None</td>
+<td class="p-6 text-slate-200">Real-time</td>
+<td class="p-6 text-slate-200">Real-time + Predictive</td>
+</tr>
+<tr>
+<td class="p-6 text-slate-300 font-medium">Analytics</td>
+<td class="p-6 text-slate-500">Basic</td>
+<td class="p-6 text-slate-200">Advanced</td>
+<td class="p-6 text-slate-200">Custom Reports</td>
+</tr>
+<tr>
+<td class="p-6 text-slate-300 font-medium">API Integrations</td>
+<td class="p-6 text-slate-500">Limited</td>
+<td class="p-6 text-slate-200">Full Access</td>
+<td class="p-6 text-slate-200">Dedicated Endpoint</td>
+</tr>
+<tr>
+<td class="p-6 text-slate-300 font-medium">Support</td>
+<td class="p-6 text-slate-300">Email</td>
+<td class="p-6 text-slate-100 font-bold">24/7 Priority</td>
+<td class="p-6 text-slate-300">Dedicated Agent</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- FAQ Simple Section -->
+<div class="mt-32 max-w-3xl mx-auto">
+<h2 class="font-cairo font-black text-3xl text-slate-100 mb-10 text-center">Frequently Asked Questions</h2>
+<div class="space-y-6">
+<div class="glass-card p-6 rounded-lg">
+<h4 class="text-slate-100 font-bold mb-2">Can I upgrade my plan later?</h4>
+<p class="text-slate-400 text-sm">Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle.</p>
+</div>
+<div class="glass-card p-6 rounded-lg">
+<h4 class="text-slate-100 font-bold mb-2">Are there any hidden setup fees?</h4>
+<p class="text-slate-400 text-sm">Absolutely not. The price you see is the price you pay, with no surprise implementation costs.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary/5 border-t border-primary/10 py-12 px-6 md:px-20 mt-20">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3 text-primary opacity-80">
+<div class="size-5">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
+</svg>
+</div>
+<h2 class="text-slate-400 text-md font-cairo font-bold tracking-tight">Tab Logistics</h2>
+</div>
+<div class="flex gap-8 text-slate-500 text-sm">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Cookie Policy</a>
+</div>
+<div class="text-slate-500 text-sm">
+                    © 2024 Tab Logistics. All rights reserved.
+                </div>
+</div>
+</footer>
+</div>
+</body></html>

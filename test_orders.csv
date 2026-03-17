@@ -1,0 +1,3 @@
+customerId,regionId,destinationCompanyId,price,productId,quantity,itemPrice
+Test Customer 1,Cairo,,250,Product A,2,125
+Test Customer 2,Alexandria,,150,Product B,1,150
