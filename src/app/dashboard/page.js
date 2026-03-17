@@ -38,7 +38,7 @@ export default function DashboardPage() {
       }
     }
     fetchOrders();
-  }, []);
+  }, [router]);
 
   return (
     <div className="animate-slide-up" style={{ padding: '2rem 1rem' }}>

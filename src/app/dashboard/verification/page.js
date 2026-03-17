@@ -35,7 +35,7 @@ export default function VerificationPage() {
       }
     }
     checkStatus();
-  }, []);
+  }, [router]);
 
   const handleFileChange = (typeId, e) => {
     const file = e.target.files[0];

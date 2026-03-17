@@ -33,7 +33,7 @@ export default function WalletPage() {
       }
     }
     fetchFinance();
-  }, []);
+  }, [router]);
 
   return (
     <div className="industrial-grid" style={{ minHeight: '100vh', background: 'var(--background)' }}>

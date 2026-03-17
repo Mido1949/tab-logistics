@@ -20,7 +20,7 @@ export default function OrderDetailsPage() {
   const [updating, setUpdating] = useState(false);
   const router = useRouter();
 
-  const fetchOrderDetails = async () => {
+  const fetchOrderDetails = React.useCallback(async () => {
     try {
       const res = await fetch(`/api/orders/info?id=${id}`);
       const data = await res.json();
@@ -35,7 +35,7 @@ export default function OrderDetailsPage() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [id]);
 
   useEffect(() => {
     const cid = getCompanyId();
@@ -48,7 +48,7 @@ export default function OrderDetailsPage() {
     // Auto-refresh order data every 10s for live tracking
     const interval = setInterval(fetchOrderDetails, 10000);
     return () => clearInterval(interval);
-  }, [id]);
+  }, [fetchOrderDetails, router]);
 
   const updateStatus = async (newStatus) => {
     setUpdating(true);

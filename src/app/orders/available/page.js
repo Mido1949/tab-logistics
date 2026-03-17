@@ -29,7 +29,7 @@ export default function AvailableOrdersPage() {
       }
     }
     fetchAvailable();
-  }, []);
+  }, [router]);
 
   const handleAccept = async (orderId) => {
     setAcceptingId(orderId);
